@@ -1,6 +1,6 @@
 local config = function()
     local nvim_lsp = require('lspconfig')
-df
+
     -- auto format before writing buffer
     vim.api.nvim_command[[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
  

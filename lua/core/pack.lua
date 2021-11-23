@@ -125,7 +125,7 @@ local function startup_plugins()
               require"surround".setup {mappings_style = "surround"}
             end
         }
-        
+		
         use {'liuchengxu/vista.vim', config=require('pconfigs.vista')}
 
         use {'b3nj5m1n/kommentary', config=function() require('kommentary.config').use_extended_mappings() end}
@@ -140,7 +140,6 @@ local function startup_plugins()
             requires = { "nvim-lua/plenary.nvim" },
             config = require('pconfigs.rest')
         }
-          
     end)
 end
 
