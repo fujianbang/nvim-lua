@@ -1,3 +1,3 @@
-# NVIM
+# nvim-lua
 
-## 快捷键
+personal nvim(using lua) config
