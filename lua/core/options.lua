@@ -1,6 +1,7 @@
 local global = require('core.global')
 
 local function bind_option(options)
+	vim.cmd [[au FocusGained,BufEnter * :silent! !]] -- file realod
     for k, v in pairs(options) do
         if v == true or v == false then
             vim.cmd('set ' .. k) -- setting boolean options, like: set nu
