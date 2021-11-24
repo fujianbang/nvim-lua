@@ -39,8 +39,6 @@ local plugin_mappings = {
     -- buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
     -- buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
-    -- TODO bufferline: https://github.com/akinsho/bufferline.nvim
-
     -- nvim-tree
     ['n|<Leader>e'] = map_cr('NvimTreeToggle'):with_silent():with_noremap(), -- 呼出文件树
 
@@ -74,8 +72,8 @@ local plugin_mappings = {
     ['v|<Leader>rl'] = map_cmd('<Plug>RestNvimLast'), ]]
 
 	-- bufferline
-	['n|<leader>n'] = map_cr('BufferLineCycleNext'):with_silent():with_noremap(), -- jump to next navigate tag
-	['n|<leader>b'] = map_cr('BufferLineCyclePrev'):with_silent():with_noremap(), -- jump to preview navigate tag
+	['n|[b'] = map_cr('BufferLineCycleNext'):with_silent():with_noremap(), -- jump to next navigate tag
+	['n|b]'] = map_cr('BufferLineCyclePrev'):with_silent():with_noremap(), -- jump to preview navigate tag
 }
 
 bind.nvim_load_mapping(plugin_mappings)
