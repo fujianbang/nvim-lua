@@ -140,6 +140,14 @@ local function startup_plugins()
             requires = { "nvim-lua/plenary.nvim" },
             config = require('pconfigs.rest')
         }
+		
+		-- rust-tools
+		use {'simrat39/rust-tools.nvim',
+			ft = {'rust'},
+			config=function()
+				require('rust-tools').setup({})
+			end
+		}
     end)
 end
 
