@@ -72,6 +72,10 @@ local plugin_mappings = {
     ['n|<Leader>rr'] = map_cmd('<Plug>RestNvim'),
     ['n|<Leader>rc'] = map_cmd('<Plug>RestNvimPreview'),
     ['v|<Leader>rl'] = map_cmd('<Plug>RestNvimLast'), ]]
+
+	-- bufferline
+	['n|<leader>n'] = map_cr('BufferLineCycleNext'):with_silent():with_noremap(), -- jump to next navigate tag
+	['n|<leader>b'] = map_cr('BufferLineCyclePrev'):with_silent():with_noremap(), -- jump to preview navigate tag
 }
 
 bind.nvim_load_mapping(plugin_mappings)
