@@ -43,7 +43,7 @@ local plugin_mappings = {
     ['n|<Leader>e'] = map_cr('NvimTreeToggle'):with_silent():with_noremap(), -- 呼出文件树
 
     -- toggleterm
-    ['n|<C-`>'] = map_cr('ToggleTerm'):with_silent():with_noremap(), -- 呼出命令行窗口
+    ['n|<leader>t'] = map_cr('ToggleTerm'):with_silent():with_noremap(), -- 呼出命令行窗口
 
     -- hop.nvim
     ['n|<Leader><Leader>w'] = map_cr('HopWord'):with_silent():with_noremap(), -- 跳转到某个单词
