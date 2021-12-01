@@ -18,8 +18,10 @@ local plugin_mappings = {
     ['n|]g'] = map_cr('Lspsaga diagnostic_jump_next'):with_silent():with_noremap(), -- 跳转到下个错误
     ['n|[g'] = map_cr('Lspsaga diagnostic_jump_prev'):with_silent():with_noremap(), -- 跳转到上个错误
     ['n|<Leader>im'] = map_cr([[lua require'telescope'.extensions.goimpl.goimpl{}]]):with_silent():with_noremap(), -- 实现接口
-    -- ['n|<Leader>f'] = map_cr('lua vim.lsp.buf.formatting()'):with_silent():with_noremap(),
-    
+    ['n|<Leader>f'] = map_cr('lua vim.lsp.buf.formatting()'):with_silent():with_noremap(),
+    ['n|<Leader>ca'] = map_cr('lua vim.lsp.buf.code_action()'):with_silent():with_noremap(),
+    ['n|<Leader>gr'] = map_cr('lua vim.lsp.buf.references()'):with_silent():with_noremap(),
+
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     -- buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     -- buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)

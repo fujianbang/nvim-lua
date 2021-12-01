@@ -7,7 +7,7 @@ local map_cmd = bind.map_cmd
 vim.g.mapleader = " " -- 设置空格为leader键
 
 local system_mappings = {
-    ['i|jj'] = map_cmd('<ESC>'), -- 插入模式下jj返回normal模式
+    ['i|df'] = map_cmd('<ESC>'), -- 插入模式下jj返回normal模式
     ['n|<Leader>q'] = map_cr('q'), -- :q
     ['n|<Leader>Q'] = map_cr('qa'), -- :qa
     ['n|<Leader>w'] = map_cr('w'), -- :w

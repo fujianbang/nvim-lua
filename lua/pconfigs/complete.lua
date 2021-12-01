@@ -12,11 +12,11 @@ local config = function()
     -- nvim-cmp setup
     local cmp = require 'cmp'
     cmp.setup {
-    --   snippet = {
-    --     expand = function(args)
-    --       require('luasnip').lsp_expand(args.body)
-    --     end,
-    --   },
+      snippet = {
+        expand = function(args)
+          require('luasnip').lsp_expand(args.body)
+        end,
+      },
       mapping = {
         -- ['<C-j>'] = cmp.mapping.select_prev_item(),
         -- ['<C-k>'] = cmp.mapping.select_next_item(),
