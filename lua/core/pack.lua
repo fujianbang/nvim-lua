@@ -71,7 +71,8 @@ local function startup_plugins()
                 'hrsh7th/cmp-nvim-lsp', -- Source nvim lsp
                 'ray-x/lsp_signature.nvim', -- LSP Signature
                 'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
-                'hrsh7th/cmp-path'
+                'hrsh7th/cmp-path',
+				"hrsh7th/cmp-buffer"
             },
             config = require('pconfigs.complete')
         }
