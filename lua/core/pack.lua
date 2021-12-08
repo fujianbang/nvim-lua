@@ -67,12 +67,10 @@ local function startup_plugins()
         use {
             "hrsh7th/nvim-cmp",
             requires = {
-                'L3MON4D3/LuaSnip', -- Snippets plugin
+				'hrsh7th/vim-vsnip', -- Snippets plugin
                 'hrsh7th/cmp-nvim-lsp', -- Source nvim lsp
-                'ray-x/lsp_signature.nvim', -- LSP Signature
-                'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
-                'hrsh7th/cmp-path',
-				"hrsh7th/cmp-buffer"
+                'hrsh7th/cmp-path', -- Completion for file path
+				'hrsh7th/cmp-buffer', -- Completion for buffer words
             },
             config = require('pconfigs.complete')
         }
@@ -82,6 +80,8 @@ local function startup_plugins()
             ft = {'go'},
             config = function() require('go').setup() end
         }
+
+		use {'ray-x/lsp_signature.nvim'}
 
         use {
             {'nvim-lua/plenary.nvim'},
